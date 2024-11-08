@@ -1,0 +1,107 @@
+.container.contact__container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 52%;
+    padding-left: 5rem;
+    gap: 12%;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+#contact h2{
+    text-align: center;
+    padding-top: 40px;
+}
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option {
+    background: rgb(240, 236, 236);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 2px solid rgb(24, 184, 24);
+    
+}
+.contact__option:hover{
+    background: rgb(240, 236, 236);
+    border: 2px solid rgb(24, 184, 24);
+}
+.btn_primary{
+    background: rgb(24, 184, 24);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 200px;  
+}
+
+.btn_primary:hover{
+    background: rgb(28, 168, 28);
+}
+/* .contact__option:hover .contact__option-icon{
+    
+    color: var(--color-primary);
+} */
+
+.contact__option-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: rgb(24, 184, 24);
+
+}
+
+.contact__option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(24, 184, 24);
+}
+
+.contact__option:hover a{
+    background: rgb(24, 184, 24);
+    color: rgb(240, 236, 236);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid rgb(24, 184, 24);
+    resize: none;
+}
+::placeholder {
+    color: rgb(24, 184, 24);
+}
+
+/* MEDIA QUARIES TABLETS */
+
+@media screen and (max-width: 1024px) {
+    .container.contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-right: 8rem;
+    }
+}
+
+/* MEDIA QUARIES PHONES */
+
+@media screen and (max-width: 600px) {
+    .container.contact__container {
+        width: auto;
+        padding: 10px;
+    }
+}
